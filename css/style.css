@@ -1,0 +1,436 @@
+*::-webkit-input-placeholder {color: #666;opacity: 1;}
+*:-moz-placeholder {color: #666;opacity: 1;}
+*::-moz-placeholder {color: #666;opacity: 1;}
+*:-ms-input-placeholder {color: #666;opacity: 1;}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+}
+body input:required:valid,
+body textarea:required:valid {
+}
+
+
+/* _________________ЗДЕСЬ !!!!!!!_______________ */
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.4;
+	font-family: "RobotoRegular", sans-serif;
+	overflow-x: hidden;
+/* __УСТАНОВИЛ ВЫСОТУ СТРАНИЦЫ ЧТОБЫ ВИДЕТЬ ПРОКРУТКУ__ */
+/*	min-height: 1700px; 	*/
+/*_____УБИРАЮ ПОКА НЕТ ВЕРХНЕЙ НАВИГАЦИИ_____*/
+	top: 65px;
+}
+
+.hidden {
+	display: none;
+}
+h1, h2 {
+	font-family: "Gabriola", serif;
+	text-align: center;
+	/*color: #4A3837;*/
+	/*color: #4e3c3b;*/
+	color: #664455;
+	font-size: 84px;
+	line-height: 0.5;
+	font-weight: normal;
+	padding-top: 22px;
+	margin: 0;
+	position: relative;
+}
+h1 {
+	z-index: 4;
+}
+h1 span {
+	font-size: 48px;
+	color: #335522;
+}
+h1 small {
+	color: #4e3c3b;
+}
+
+h2 {
+	font-size: 62px;
+	margin-bottom: 15px;
+}
+h5 {
+	text-align: center;
+	font-size: 34px;
+	font-family: "Gabriola", serif;
+	font-weight: bold;
+	margin-top: -12px;
+}
+
+h5 span {
+	color: #465D39;
+}
+
+
+p {
+	font-family: "RobotoRegular", sans-serif;
+	text-align: center;
+	font-size: 17px;
+	line-height: 1.4;
+}
+/*p span {
+	color: #335522;
+}*/
+.p-txt {
+	font-family: "RobotoRegular", sans-serif;
+	line-height: 1.3;
+	font-size: 18px;
+}
+.nav-inner__vert6 {
+	vertical-align: middle;
+	padding: 20px 13px 0;
+}
+
+
+
+
+/* _____________NAVBAR___________ */
+
+
+.navbar {
+	border-bottom: none;
+}
+.navbar-fixed-top {
+	background-color: #266C00;
+}
+
+.navbar-brand {
+	padding-top: 0;
+}
+
+.nav-inner {
+	text-align: center;
+}
+.nav {
+	display: inline-block;
+	position: relative;
+}
+
+
+/* __auto !important;__ */
+
+.navbar-nav {
+/* _____ХИТРЫЙ ХОД_____ */
+	float: none;
+	text-align: center;
+	/*margin-left: auto !important;
+	margin-right: auto !important;*/
+}
+.navbar-default .navbar-nav > li {
+	background-color: red;
+	max-width: 102px;
+/* _____ХИТРЫЙ ХОД___ПОКА УБИРАЮ___ */
+	/*display: inline-block;
+	float: none;*/
+	position: relative;
+	display: inline-block;
+}
+
+.navbar-default .navbar-nav > li > a {
+	/*font-family: "IzhitsaRegular", serif;*/
+	font-size: 14px;
+/* __ЦВЕТ БУКВ ВЕРХНЕГО МЕНЮ__ */
+	color: #E4FFD5;
+	text-align: center;
+	padding: 8px 0;
+	/*line-height: 20px;*/	/*__ВЫСОТА__*/
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	background-color: #E4FFD5;
+	color: #266C00;
+}
+
+
+
+
+/* ___________СЛАЙДЕР ____________*/
+
+
+.s_slider {
+	margin-top: -26px;
+	z-index: 3;
+	position: relative;
+	/*z-index: 1;*/
+}
+
+
+/*.bg-top {
+	overflow-x: hidden;
+	background-repeat: no-repeat;
+	background: url(../img/svoi-dom-bg-top.jpg) fixed top center;
+}*/
+
+/*.sec_middle {
+	background-color: #ffff8d;
+	background: url(../img/svoi-dom-bg-top.jpg);
+	background: url(../img/svoi-dom-bg-top_rezinka.jpg);
+	background-repeat: repeat-x;
+	background-repeat: no-repeat;
+	background-attachment: fixed center;
+	min-height: 850px;
+	НЕ ЗНАЮ: НУЖЕН ЛИ __КОВЕР__ ?
+	-webkit-background-size: cover;
+	background-size: cover;
+}*/
+
+
+
+
+/*______ЭТО ТЕКСТ ТОЛЬКО НА ЗАГЛУШКЕ______*/
+
+.temp_div {
+	/*background-color: red;*/
+	z-index: 5;
+	position: relative;
+}
+.text_bottom {
+	margin-top: -114px;
+}
+.text_bottom p {
+	color: #4e3c3b;
+	font-family: "Gabriola", serif;
+	text-align: center;
+	font-size: 30px;
+	line-height: 0.9;
+}
+.text_bottom p span {
+	color: #465D39;
+}
+
+
+
+/*_______ЭКСПЕРИМЕНТ-ФЛЕКС______*/
+
+.experiment_flex {
+	background-color: gold;
+	padding: 20px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+.experiment_flex p {
+	color: #4e3c3b;
+	font-family: "Gabriola", serif;
+	text-align: center;
+	font-size: 30px;
+	line-height: 0.9;
+	padding-top: 10px;
+}
+.experiment_flex img {
+	width: 100%;
+}
+/*_______ДОЧЕРНИЙ ОТ ФЛЕКСА_______*/
+.item_fl {
+	padding: 15px;
+	margin: 10px;
+	background-color: gray;
+}
+
+
+
+
+
+
+/* _____ФОРМЫ_____*/
+
+.form_hidden {
+	position: relative;
+	margin: auto;
+}
+/*.form_flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	height: 400px;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}*/
+
+.mfp-content img {
+	margin-bottom: 15px;
+}
+
+.mfp-content form {
+/*	background-color: rgba(254,107,63,.4);	*/
+	background-color: rgba(255,214,154,.8);
+	padding: 25px 30px;
+	/*border: #FF6347 2px solid;*/
+	border: #664455 2px solid;
+	border-radius: 8px;
+	margin: auto;
+	/*max-width: 340px;*/
+	max-width: 640px;
+	position: relative;
+/* ____РАСПОЛОЖЕНИЕ ВСПЛЫВАЮЩЕГО ОКНА ПО  ВЕРТИКАЛИ____*/
+/*___ПОХОЖЕ ЧТО ОНА НЕ РАБОТАЕТ___*/
+	/*margin-top: 150px;*/
+}
+
+
+.mfp-content form p {
+	font-size: 28px;
+	line-height: 24px;
+	/*color: #ff6347;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	font-family: "RobotoBold", sans-serif;
+	font-size: 22px;
+	line-height: 25px;
+	text-shadow: -1px 1px 3px #000;*/
+}
+.mfp-content form input {
+	display: block;
+	line-height: 34px;
+	height: 34px;
+	border: #D9D9D9 2px solid;
+	box-shadow: 0 0 20px rgba(0,0,0,.3) inset;
+	width: 100%;
+	text-indent: 8px;
+	margin-top: 0px;
+}
+/* __ЗАГОЛОВОК ВНУТРИ ФОРМЫ ЗАКАЗА__ */
+.mfp-content h4 {
+	color: #AC160A;
+	font-family: "RobotoBold", sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+}
+.button_wrap {
+	text-align: center;
+}
+.btn_red {
+	border: none;
+	cursor: pointer;
+	outline: none;
+	display: inline-block;
+	height: 52px;
+	padding: 15px 40px;
+	background-color: #FF1200;
+	text-transform: uppercase;
+	color: #FFF;
+	border-radius: 7px;
+	font-family: "RobotoBold", sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	border-bottom: #AC160A 4px solid;
+	margin-top: 10px;
+}
+.btn_red:hover {
+	background-color: #e00505;
+	color: #e0edfd;
+}
+.btn_red:active {
+	background-color: #D30000;
+	color: #eeab77;
+}
+
+/*_______КНОПКА_____взял с макета ActiveBox (postovoy_net__ШАБЛОНЫ)____*/
+/*____УБРАЛ КОД___*/
+
+
+
+
+
+
+
+
+
+/*  _____МОДАЛЬНОЕ ОКНО-1 _____НЕ ПЕРЕНОШУ В SASS____*/
+.modal_button_wrap {
+	margin-top: -60px;
+	z-index: 6;
+	position: relative;
+}
+
+
+.modal-body {
+	background-color: burlywood;
+}
+.modal-dialog {
+	/*margin: 89px auto;*/
+	margin: 200px auto;
+	width: 800px;
+}
+h4 {
+	text-align: center;
+	color: red;
+	font-size: 28px;
+}
+
+/* _____РАДИО-КНОПКИ И ИХ УПРАВЛЕНИЕ_______НЕ ПЕРЕНОШУ В SASS__*/
+
+fieldset[disabled] input[type=checkbox],
+fieldset[disabled] input[type=radio],
+input[type=checkbox].disabled,
+input[type=checkbox][disabled],
+input[type=radio].disabled,
+input[type=radio][disabled] {
+	cursor: not-allowed;
+}
+fieldset[disabled] input[type=checkbox]:hover {
+	color: yellow;
+	background-color: red;
+}
+
+/*button[disabled], html input[disabled]*/
+
+
+
+/*______Наши Преимущества_______*/
+
+div#excellence {
+	background-color: #fbc595;
+	padding: 40px;
+}
+div#first-floor {
+	background-color: #6ce6f8;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+div#second-floor {
+	background-color: grey;
+	padding-top: 70px;
+	padding-bottom: 35px;
+}
+.stroi {
+	background-color: yellow;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+.stroi p {
+	text-align: left;
+	font-size: 22px;
+	line-height: 1.5;
+	color: blue;
+}
+
+
+footer {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #4f0202;
+	color: #FFF;
+}

@@ -1,0 +1,93 @@
+*::-webkit-input-placeholder {color: #666;opacity: 1;}
+*:-moz-placeholder {color: #666;opacity: 1;}
+*::-moz-placeholder {color: #666;opacity: 1;}
+*:-ms-input-placeholder {color: #666;opacity: 1;}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+}
+body input:required:valid,
+body textarea:required:valid {
+}
+
+body{
+	min-width: 320px;
+	position: relative;
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 18px;
+	line-height: 1.4;
+	overflow-x: hidden;
+}
+h1 {
+
+}
+h2  {
+
+}
+h3  {
+
+}
+h4 {
+
+}
+
+
+/*_________________________________*/
+/* _____ ГЛАВНОЕ МЕНЮ _____________*/
+/*_________________________________*/
+
+
+div#wrapper{
+/*	height:90px;				*/
+	/*background-color: #dcc596;*/
+	margin-bottom: 10px;
+}
+
+ul#nav{
+	height: 32px;
+/*____РАЗМЕР БУКВ НА ВЕРХНЕМ МЕНЮ_____*/
+	font-size: 13px;
+	border-radius: 6px;
+	width: 100%;
+	box-shadow: 1px 3px 2px rgba(0,0,0,0.9);
+	text-align: center;
+}
+
+ul#nav > li {
+	text-shadow: 1px 3px 0 #3C3C3C;
+	font-weight: bold;
+	color: green;
+/*	border-radius: 7px;				*/
+/*	border-bottom: 1px solid #2e3641;		*/
+/*	border-top: 1px solid #88909B;			*/
+	position: relative;
+/* ___РАЗВОРАЧИВАЮ МЕНЮ ИЗ СТОЛБИКА В СТРОКУ ___ */
+/* ___FLOAT - хорошо для выравнивания СЛЕВА ___ */
+/*	float: left;	*/
+	display: inline-block;
+/*	margin: 0;	*/
+/* ____РАССТОЯНИЕ МЕЖДУ ПУНКТАМИ МЕНЮ___________ */
+	padding: 8px 20px;
+}
+
+ul#nav > li a {
+	color: #FFF;
+	cursor: pointer;
+}
+ul#nav > li a:hover {
+	color: #F3C75F;
+}
+ul#nav > li a.active {
+	color: #F3C75F;
+}
+
+
+ul#nav > li:hover,
+ul#nav > li.active{
+/*	ЗАДАЮ ФИРМЕННЫЙ ЖЕЛТЫЙ - #F3C75F	*/
+/*	cursor: pointer;	*/
+}
+
+ul#nav > li.active {
+/*	background: red;		*/
+}

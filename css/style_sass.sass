@@ -1,0 +1,978 @@
+$color_01_light_purple: #664455
+$color_02_dark_green: #335522
+$color_03_pastel: #ccbbab
+$color_04_broun: #765546
+$color_05_faded_blue: #566687
+$color_06_light_green: #99bb88
+$color_07_sandy_broun: #ce8745
+$color_08_dark_red: #310101
+$color_09_magenta: #fa0668
+
+$color_10_azure: #e0edfd
+$translucent_10_azure: rgba(221, 238, 254, 1.0)
+
+$color_11_light_cyan: #aacccd
+$translucent_11_light_cyan: rgba(170, 204, 205, 1.0)
+
+$color_12_black_green: #112202
+$color_13_white_green: #ccddbd
+$color_14_peach: #eeab77
+$current-font-size: 17px
+
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+a:focus
+	outline: none
+
+// ____ПОТОМ УБРАТЬ____ -- ЭТО ПЕРЕЛИНКОВКА -- ЗЕЛЕНЫЙ
+p
+	span
+		// color: green
+		// ____green___ЗАМЕНИТЬ НА ТЕМНО-КРАСНЫЙ ???
+		// text-decoration: underline
+		// font-weight: bold
+
+// _______MAIN_______
+
+
+//	____top: 65px____УБИРАЮ ПОКА НЕТ ВЕРХНЕЙ НАВИГАЦИИ____
+body
+	font-size: $current-font-size
+	line-height: 1.4
+	font-family: "RobotoRegular", sans-serif
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+	top: 65px
+
+.hidden
+	display: none
+
+
+h1
+	color: $color_01_light_purple
+	font-family: "Gabriola", serif
+	font-size: 84px
+	line-height: 0.5
+	text-align: center
+	font-weight: normal
+	padding-top: 22px
+	position: relative
+	margin: 0
+
+//	______z-index_________
+h1
+	z-index: 4
+
+h1 span
+	color: $color_02_dark_green
+	font-size: 48px
+h1 small
+	color: $color_01_light_purple
+
+h2, h3
+	color: lighten($color_08_dark_red, 6%)
+	font-family: "PhilosopherBold", serif
+	text-align: center
+	font-size: 56px
+	line-height: 1.1
+	padding-bottom: 25px
+
+
+h3
+	font-size: 36px
+	span
+		font-size: 29px
+h4
+	font-size: 24px
+	font-family: "Gabriola", serif
+	line-height: 1.0
+	color: #FFF
+	text-align: center
+	padding: 0
+	margin: 0
+h5
+	font-size: 34px
+	color: $color_01_light_purple
+	font-family: "Gabriola", serif
+	text-align: center
+	span
+		color: $color_02_dark_green
+
+p
+	font-family: "RobotoRegular", sans-serif
+	font-size: $current-font-size
+	line-height: 1.5
+
+
+
+
+//	______ NAVBAR _______
+
+.navbar
+	border-bottom: none
+
+//	_____это костыль - двигаю логотип ВПРАВО____
+.navbar > .container,
+.navbar > .container-fluid
+	.navbar-brand
+		padding-top: 0
+		margin-left: -30px
+
+//	___ВЫРАВНИВАНИЕ НАВБАРА_!!!___text-align: center__
+// ____СТАНДАРТНЫЙ Bootstrap-ВАРИАНТ____
+// #bs-example-navbar-collapse-1
+// 	background-color: yellow
+// 	text-align: center
+
+// ____ФЛЕКС-ВАРИАНТ навбара____
+// #bs-example-navbar-collapse-1
+// 	text-align: center
+	// background-color: lightgreen
+
+
+// ____ ВОТ ОН: ФИКСИРОВАННЫЙ ВЕРХНИЙ НАВБАР !!!! ____
+.navbar-fixed-top
+	background-color: lighten($color_02_dark_green, 5%)
+
+// ___не нужно
+//	margin-left: auto
+//	margin-right: auto
+// .nav-inner
+// 	.nav-inner__vert6
+// 		padding-top: 8px
+// 		padding-left: 10px
+
+
+//	___ВЫРАВНИВАНИЕ НАВБАРА_!!!___display: inline-block__
+.nav
+	display: inline-block
+//	position: relative
+//	text-align: center
+
+
+// ___не работает ???
+//	.navbar-nav
+//		text-align: center
+//		float: none
+//	background-color: red
+//	a:hover		background-color: $color_13_white_green
+
+
+
+//	___ВЫРАВНИВАНИЕ НАВБАРА_!!!___float: none__
+// .navbar-default
+// 	.navbar-nav
+// 		background-color: red
+// 		float: none
+// 	.navbar-nav > li
+// 		max-width: 102px
+// 		position: relative
+// 		display: inline-block
+// 		a
+// 			color: $color_13_white_green
+// 			font-size: 14px
+// 			text-align: center
+// 			padding: 8px 1px
+// 		a:hover, a:focus
+// 			color: #FFF
+// 			text-decoration: underline
+// 		a:active
+// 			text-shadow: -1px 1px 3px #000
+
+
+
+
+// ____ФЛЕКС-ВАРИАНТ навбара____
+.navbar-default
+	.navbar-nav
+		// background-color: red
+		float: none
+		display: flex
+		justify-content: space-around
+		align-items: center
+		flex-wrap: wrap
+	.navbar-nav > li
+		max-width: 102px
+		position: relative
+		// display: inline-block
+		a
+			color: $color_13_white_green
+			font-size: 14px
+			text-align: center
+			padding: 8px 1px
+		a:hover
+			color: red
+			text-decoration: underline
+		a:focus
+			color: #FFF
+		a:active
+			text-shadow: -1px 3px 3px #000
+			background-color: darken($color_02_dark_green, 1%)
+
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover
+	background-color: transparent
+	color: #FFF
+
+
+// .navbar-default
+// 	.navbar-nav
+// 		// background-color: red
+// 		float: left
+// 	.navbar-nav > li
+// 		max-width: 102px
+// 		position: relative
+// 		display: inline-block
+// 		a
+// 			color: $color_13_white_green
+// 			font-size: 14px
+// 			text-align: center
+// 			padding: 8px 1px
+// 		a:hover
+// 			color: red
+// 			text-decoration: underline
+// 		a:focus
+// 			color: #FFF
+// 		a:active
+// 			text-shadow: -1px 3px 3px #000
+// 			background-color: darken($color_02_dark_green, 1%)
+
+// .anchor-list__item
+// 	flex-grow: 1
+// .anchor-list__item-2
+// 	flex-grow: 2
+
+.dropdown-menu
+	background-color: darken($color_02_dark_green, 1%)
+
+// .navbar-default .navbar-nav > .open > a,
+// .navbar-default .navbar-nav > .open > a:focus,
+// .navbar-default .navbar-nav > .open > a:hover
+// 	background-color: lighten($color_02_dark_green, 5%)
+// 	color: #FFF
+
+
+
+
+
+.navbar-default .navbar-nav > li a:hover,
+.navbar-default .navbar-nav > li a:focus
+	// color: blue
+	// text-decoration-color: lightyellow
+	// text-decoration-line: underline
+	// text-decoration-style: solid
+
+
+
+//	_______СЛАЙДЕР ________
+
+//	______z-index_________
+.s_slider
+	margin-top: -26px
+	z-index: 3
+	position: relative
+
+
+
+//	_____ЭТО ТЕКСТ ТОЛЬКО НА ЗАГЛУШКЕ_____
+
+//	______z-index_________
+// .text_bottom
+// 	z-index: 5
+// 	position: relative
+// 	margin-top: -114px
+// 	p
+// 		color: $color_01_light_purple
+// 		font-family: "Gabriola", serif
+// 		text-align: center
+// 		font-size: 30px
+// 		line-height: 0.9
+// 		span
+// 			color: $color_02_dark_green
+
+
+
+
+//	_____BOOTSTRAP-Grayscale_____
+
+//	______z-index_________
+.arrow-green
+	text-align: center
+	z-index: 5
+	position: relative
+	margin-top: -140px
+
+//	width: 70px
+//	height: 70px
+//	font-size: 40px
+//	padding: 7px 16px
+.btn-circle
+	width: 50px
+	height: 50px
+	margin-top: 15px
+	padding: 4px 14px
+	border: 2px solid #fff
+	border-radius: 100%!important
+	font-size: 30px
+	color: #fff
+	background-color: lighten($color_02_dark_green, 25%)
+	-webkit-transition: background .3s ease-in-out
+	-moz-transition: background .3s ease-in-out
+	transition: background .3s ease-in-out
+
+.btn-circle:hover,
+.btn-circle:focus
+	background-color: lighten($color_02_dark_green, 45%)
+	color: $color_02_dark_green
+
+.btn-circle i.animated
+	-webkit-transition-property: -webkit-transform
+	-webkit-transition-duration: 1s
+	-moz-transition-property: -moz-transform
+	-moz-transition-duration: 1s
+
+.btn-circle:hover i.animated
+	-webkit-animation-name: pulse
+	-moz-animation-name: pulse
+	-webkit-animation-duration: 1.5s
+	-moz-animation-duration: 1.5s
+	-webkit-animation-iteration-count: infinite
+	-moz-animation-iteration-count: infinite
+	-webkit-animation-timing-function: linear
+	-moz-animation-timing-function: linear
+
+@-webkit-keyframes pulse
+	0%
+		-webkit-transform: scale(1)
+		transform: scale(1)
+
+	50%
+		-webkit-transform: scale(1.5)
+		transform: scale(1.5)
+
+	100%
+		-webkit-transform: scale(1)
+		transform: scale(1)
+
+@-moz-keyframes pulse
+	0%
+		-moz-transform: scale(1)
+		transform: scale(1)
+
+	50%
+		-moz-transform: scale(1.5)
+		transform: scale(1.5)
+
+	100%
+		-moz-transform: scale(1)
+		transform: scale(1)
+
+
+// ______ =БЛОК СДЕЛАННЫЙ ЧЕРЕЗ ФЛЕКС= _______________
+// ____margin-top: 70px
+// ____ align-items: center ___ЦЕНТРИРУЕТ здесь ПО ВЕРТИКАЛИ___
+// .flexbox-container
+// 	padding: 15px
+// 	background: lightsteelblue
+// 	display: flex
+// 	align-items: stretch
+// 	justify-content: center
+
+// ______width: 300px
+// ______flex-grow: 4
+	// margin-left: 150px
+	// margin-right: 54px
+// .flexbox-vert-item-1
+// 	background: #C2C2C2
+// 	padding: 11px
+// 	max-width: 576px
+
+
+// ______flex-grow: 2
+// .flexbox-vert-item-2
+// 	background: #fefefe
+// 	padding: 11px
+// 	align-self: center
+
+// .flexbox-vert-item-3
+// 	height: auto
+	// img
+	// 	height: 50%
+
+
+//	____СЕКЦИЯ___MAIN_TEXT_WRAP___________________
+
+//	margin-top: 15px
+//	.main_text_wrap
+div#gray_wrap, .gray_wrap-2, .gray_wrap-3, .gray_wrap-4
+	background-color: lighten($color_03_pastel, 23%)
+	margin-top: 70px
+	padding-top: 44px
+	padding-bottom: 26px
+
+div#gray_wrap
+	.knopka_wrap
+		margin-top: 62px
+
+.gray_wrap-2, .gray_wrap-4
+	margin-top: 0px
+	.knopka_wrap
+		margin-top: 2px
+
+.gray_wrap-3
+	margin-top: 0px
+	.knopka_wrap
+		margin-top: 26px
+
+//	___КНОПКА___
+.knopka
+	text-align: center
+
+
+
+
+
+.germ
+	font-family: "Gabriola", serif
+	font-size: $current-font-size * 1.8
+	line-height: 1.0
+	span
+		color: lighten($color_08_dark_red, 25%)
+		font-weight: bold
+		text-decoration: none
+
+
+//	__КНОПКА - ФОРМА ОТ МАГНИФИК-ПОПАП__
+
+.form_hidden
+	position: relative
+	margin: auto
+
+
+
+// background-color: #FF1200
+// background-color: #D30000
+.btn_red
+	border: none
+	cursor: pointer
+	outline: none
+	display: inline-block
+	height: 52px
+	padding: 15px 40px
+	background-color: lighten($color_08_dark_red, 25%)
+	text-transform: uppercase
+	color: #FFF
+	border-radius: 7px
+	font-family: "RobotoRegular", sans-serif
+	font-size: 18px
+	line-height: 18px
+	border-bottom: lighten($color_08_dark_red, 20%) 4px solid
+	margin-top: 10px
+
+.btn_red:hover
+	background-color: lighten($color_08_dark_red, 35%)
+	color: $color_10_azure
+
+.btn_red:active
+	background-color: lighten($color_08_dark_red, 20%)
+	color: $color_14_peach
+
+
+//	____сама ВСПЛЫВАШКА__MFP____
+//	background-color: transparentize($translucent_10_azure, 0.5)
+//	____ПОТОМ РАЗОБРАТЬСЯ____
+//	h5
+//		text-align: center
+//		font-family: "Gabriola", serif
+//		color: $color_01_light_purple
+//		font-size: 44px
+//		background-color: opacify($translucent_10_azure, 0.5)
+//		input ------>
+//			box-shadow: 0 0 20px rgba(0,0,0,.3) inset
+.mfp-content
+	form
+		max-width: 640px
+		background-color: #CCC
+		border-radius: 8px
+		border: lighten($color_08_dark_red, 25%) 2px solid
+		position: relative
+		margin: auto
+		padding: 25px 30px
+		h5
+			margin-top: -12px
+		img
+			margin-bottom: 15px
+			border: lighten($color_08_dark_red, 25%) 2px solid
+		input
+			display: block
+			line-height: 34px
+			height: 34px
+			border: #D9D9D9 2px solid
+			box-shadow: 0 0 10px rgba(0,0,0,.3) inset
+			width: 100%
+			text-indent: 8px
+			margin-top: 0px
+		p
+			font-size: 28px
+			line-height: 24px
+			font-family: "Gabriola", serif
+			text-align: center
+
+
+//	
+.button_wrap
+	text-align: center
+	.btn_red
+		padding-top: 13px
+
+
+
+//	_____Наши Преимущества_____
+
+div#excellence
+	// background-color: #ffffc2
+	// padding-bottom: 40px
+	// padding-top: 30px
+	h2
+		text-align: left
+		margin-top: -212px
+		margin-bottom: 82px
+		padding-left: 40px
+
+
+
+
+.item_top
+	width: 100%
+	padding-top: 1px
+	padding-bottom: 1px
+	margin-top: 1px
+	// background-color: green
+
+
+// ______К СОЖАЛЕНИЮ___НЕ НУЖНО__________________
+// ___ПРОБУЮ СДЕЛАТЬ КОРИЧНЕВЫЕ БЛОКИ ВО ФЛЕКСЕ_____
+// .flex-brown-cont
+// 	display: flex
+// ___РАСТЯЖКА ПО-ВЕРТИКАЛЕ_____
+	// align-items: stretch
+
+
+
+// .item-brown
+// 	background-color: lighten($color_08_dark_red, 6%)
+// 	padding: 15px
+// 	margin-left: 10px
+// 	margin-right: 10px
+// 	margin-bottom: 20px
+// 	height: 128px
+// 	p
+// 		text-align: center
+// 		color: #FFF
+
+// .item-brown-light
+// 	background-color: lighten($color_08_dark_red, 14%)
+
+// .item-brown-light-2
+// 	background-color: lighten($color_08_dark_red, 21%)
+
+
+
+
+// ____КВАДРАТИКИ С КАРТИНКАМИ___
+// .item
+// 	display: inline-block
+// 	overflow: hidden
+// 	width: 100%
+// 	a
+// 		background: #454549 none repeat scroll 0 0
+// 		display: block
+// 		margin: 10px
+// 		overflow: hidden
+// 		position: relative
+// 	a:hover
+// 		background-color: #29aafe
+// 		.title
+// 			transition: bottom 0.2s ease-out 0s
+// 			background: #454549 none repeat scroll 0 0
+// 			bottom: -35px
+// 			box-sizing: border-box
+// 			color: #fff
+// 			display: block
+// 			font-size: 17px
+// 			font-weight: 300
+// 			height: 35px
+// 			left: 0
+// 			line-height: 35px
+// 			padding: 0 10px
+// 			position: absolute
+// 			width: 100%
+// 			color: #fff
+// 			.name
+// 				font-weight: 600
+// 				margin-left: 2px
+// 				text-transform: uppercase
+// 		img
+// 			transition: opacity 0.2s ease-out 0s
+// 			opacity: 0.8
+// 			display: block
+// 			scale-with-grid
+// 				height: auto
+// 				max-width: 100%
+
+
+
+// ____ БЛОК ОТ БАЙГУЗИНА - 06 - Pancaro ____
+
+.portfolio_items
+	// margin-top: 40px
+	// margin-bottom: 40px
+	// background-color: yellow
+
+.portfolio_items .single_item img
+	width: 100%
+
+.portfolio_items .single_item
+	margin-bottom: 30px
+
+.work-overlay
+	position: absolute
+	text-align: center
+	color: #FFF
+	// ___РЕГУЛИРОВКА___!!!___
+	padding: 20px
+	width: 100%
+	height: 100%
+	// padding-top: 12%
+	opacity: 0
+	transition: all 0.5s ease
+
+.work-overlay h3
+	font-size: 24px
+	// ___ОТРИЦАТЕЛЬНЫЙ МАРДЖИН подтягивает НИЖНИЙ ТЕКСТ КВЕРХУ__
+	// ___РЕГУЛИРОВКА___!!!___
+	margin-bottom: -20px
+	// ___РЕГУЛИРОВКА___!!!___
+	margin-top: -10px
+
+.work-overlay p
+	font-size: 18px
+
+// ___ СТИЛЬ ДЛЯ КРУЖОЧКА -LINK- ____
+// .work-overlay a.link
+// 	background: rgba(0, 0, 0, 0.63)
+// 	margin: 0 auto
+// 	display:inline-block
+// 	width: 45px
+// 	height: 45px
+// 	padding-top: 12px
+// 	margin-top: 24px
+// 	margin-right: 7px
+// 	transition: all 0.5s ease
+// 	transform: translateY(200px)
+// 	border-radius: 30px
+
+.work-overlay a.lightbox
+	background: rgba(0, 0, 0, 0.63)
+	margin: 0 auto
+	display: inline-block
+	padding-top: 2px
+	margin-top: 24px
+	transition: all 0.5s ease
+	transform: translateY(200px)
+	// ___РАЗМЕР КВАДРАТА или КРУГА__когда есть BORDER-RADIUS
+	// width: 95px
+	// height: 95px
+	// border-radius: 30px
+
+// ____ДОБАВЛЯЮ вроде бы для P___ДА !!!__ПОЛУЧИЛОСЬ__
+.work-overlay p.lightbox
+	background: rgba(0, 0, 0, 0.63)
+	margin: 0 auto
+	display: inline-block
+	padding: 32px
+	margin-top: 1px
+	transition: all 0.5s ease
+	transform: translateY(200px)
+
+.work-inner
+	position: relative
+	// overflow: hidden
+
+.work-inner:hover > .work-overlay
+	background: rgba(207, 0, 15, 0.82)
+	opacity: 1
+	transition: all 0.5s ease
+	// ___ КОРИЧНЕВАЯ ОКАНТОВКА ___
+	border: 15px solid lighten($color_08_dark_red, 6%)
+
+
+// .work-inner:hover > .work-overlay a.link
+// 	color: #fff
+// 	transform: translateY(0px)
+// 	transition: all 0.1s ease
+// 	transition-duration: 0.3s
+
+.work-inner:hover > .work-overlay a.lightbox
+	color: #fff
+	transform: translateY(0px)
+	transition: all 0.1s ease
+	transition-duration: 0.6s
+
+___ ДОБАВЛЯЮ чтобы сменить A на P______
+.work-inner:hover > .work-overlay p.lightbox
+	color: #fff
+	transform: translateY(0px)
+	transition: all 0.1s ease
+	transition-duration: 0.6s
+
+// ____ БЛОК ОТ БАЙГУЗИНА - КОНЕЦ ____
+
+
+
+
+.item-pic-wrap
+	margin-top: 20px
+	margin-bottom: 30px
+	display: flex
+	// ___justify-content__ЦЕНТРИРОВАТЬ_ПО-ГОРИЗОНТАЛИ
+	justify-content: center
+	// justify-content: space-between
+	// justify-content: space-around
+	// ___ДАЛЕЕ: ВЫРОВНИТЬ_ПО_ВЕРТИКАЛЕ___:
+	// align-items: center
+	align-items: baseline
+	// align-items: stretch
+	flex-wrap: wrap
+
+
+.item-pic
+	// background-color: #6ab046
+	// border: 2px solid #000
+	// border-radius: 15%!important
+	border-top: 5px solid $color_04_broun
+	color: #000
+	// height: 210px
+	width: 210px
+	padding: 0
+	margin: 0 42px
+	// display: inline-block
+	// position: relative
+	p
+		text-align: center
+		
+.special-wrap
+	// background-color: lightyellow
+	background-color: lighten($color_14_peach, 23%)
+	padding: 30px 0
+	text-align: center
+	p
+		font-family: "Gabriola", serif
+		font-size: 30px
+		i
+			color: lighten($color_08_dark_red, 25%)
+
+
+// ____Оплата НА FLEX_____
+
+.oplata
+	display: flex
+	// justify-content: space-around
+	// justify-content: space-between
+	// background-color: lightblue
+	// padding-top: 40px
+	// padding-bottom: 40px
+
+
+.oplata_item_1
+	background-color: lavenderblush
+	padding: 20px
+	width: 50%
+
+.oplata_item_2
+	background-color: lavender
+	padding: 20px
+	width: 50%
+
+//	_____1-этажный проект_____
+
+div#first-floor
+
+.wrap_fluid
+	background-color: lighten($color_13_white_green, 10%)
+
+
+// .pic_item
+// 	background-color: #ccbbab
+// 	display: flex
+// 	flex-wrap: nowrap
+// 	justify-content: center
+// 	margin-top: 15px
+
+.wrap_div_col
+	// border: solid 2px red
+	div
+		padding-left: 0
+		padding-right: 0
+
+
+
+//	_____2-этажный проект_____
+
+div#second-floor
+	// ___НЕ РАБОТАЕТ
+	// padding-top: 70px
+	// background-color: #c7e6e6
+
+
+// _____ЭКСПЕРИМЕНТ_1________
+#experiment_1
+	margin-top: 20px
+	// margin-bottom: 20px
+	// background-color: yellow
+
+
+
+
+
+//	____ЭТАПЫ СТРОИТЕЛЬСТВА_____
+
+.stroi
+	padding-top: 30px
+	padding-bottom: 50px
+	background-color: #88AACC
+
+
+
+// ___ ФУТЕР, СДЕЛАННЫЙ НА FLEX __
+// .red_footer
+// 	background-color: darken($color_09_magenta, 20%)
+// 	padding-top: 40px
+// 	padding-bottom: 40px
+
+// .flex-footer
+// 	display: flex
+// 	justify-content: space-between
+
+
+//	______ FOOTER _______
+
+footer
+	// color: #FFF
+	background-color: lighten($color_08_dark_red, 6%)
+	padding-top: 20px
+	padding-bottom: 20px
+	img
+		// float: left
+		margin-right: 8px
+	p
+		font-size: 16px
+		color: $color_13_white_green
+	.footer__wrap
+		// background-color: lighten($color_08_dark_red, 8%)
+		.footer__wrap_mail
+			margin-bottom: 15px
+			a
+				color: $color_13_white_green
+			a:hover
+				color: #ff8e0a
+		.footer_img_wrapper
+			position: relative
+			margin-top: 1px
+			// display: inline-block ___ТОЛЬКО ВСЕ ПОРТИЛ___
+		.pochta_top
+			margin-bottom: 18px
+			text-align: center
+	.footer__social
+		margin: 12px 0
+		p
+			text-align: left
+			font-size: 13px
+			margin-top: 27px
+			// color: red
+		i
+			// __РАЗМЕР СОЦ-ИКОНОК
+			font-size: 27px
+		.icon_curcle
+			color: $color_13_white_green
+		.fa
+			margin-left: 5px
+		.fa:hover
+			color: #ff8e0a
+	.footer__logo
+		display: inline-block
+
+.nav_bottom
+	margin-top: -1px
+	margin-bottom: 20px
+	ul
+		margin-left: -32px
+		li
+			list-style-type: none
+			display: block
+			a
+				color: $color_13_white_green
+				font-size: 14px
+			a:active
+				// color: darken($color_13_white_green, 28%)
+				color: #ff8e0a
+				text-shadow: -1px 1px 5px #FFF
+			a:hover
+				// color: darken($color_13_white_green, 28%)
+				color: #ff8e0a
+			a:focus
+				text-decoration: underline
+
+
+
+
+.footer-2
+	background-color: lighten($color_08_dark_red, 6%)
+	margin-top: 10px
+
+
+		// a:hover, a:focus
+		// 	color: #FFF
+		// 	text-decoration: underline
+		// a:active
+		// 	text-shadow: -1px 3px 3px #000
+
+
+
+// _____СТРАНИЦА__ГАЗОВЫЕ БЛОКИ___
+.gaz-blok
+	h2
+		padding-bottom: 1px
+	h3
+		margin-top: -10px
+	img
+		margin-top: 14px
+		margin-bottom: 25px
+
+// _____СТРАНИЦА__КОНТАКТЫ___
+.yandex-map
+	padding: 20px
+	background-color: lighten($color_08_dark_red, 6%)
+	// margin-top: 0

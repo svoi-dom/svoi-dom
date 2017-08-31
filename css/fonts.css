@@ -1,0 +1,45 @@
+@font-face {
+	font-family: "RobotoRegular";
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"),
+			 url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+			 url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Gabriola";
+	src: url("../fonts/Gabriola/Gabriola.eot");
+	src: url("../fonts/Gabriola/Gabriola.eot?#iefix") format("embedded-opentype"),
+			 url("../fonts/Gabriola/Gabriola.woff") format("woff"),
+			 url("../fonts/Gabriola/Gabriola.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+    font-family: "PhilosopherRegular";
+    src: url("../fonts/PhilosopherRegular/PhilosopherRegular.eot");
+    src: url("../fonts/PhilosopherRegular/PhilosopherRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PhilosopherRegular/PhilosopherRegular.woff") format("woff"),
+    url("../fonts/PhilosopherRegular/PhilosopherRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "PhilosopherBold";
+    src: url("../fonts/PhilosopherBold/PhilosopherBold.eot");
+    src: url("../fonts/PhilosopherBold/PhilosopherBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PhilosopherBold/PhilosopherBold.woff") format("woff"),
+    url("../fonts/PhilosopherBold/PhilosopherBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/*@font-face {
+    font-family: "Herold";
+    src: url("../fonts/Herold/Herold.eot");
+    src: url("../fonts/Herold/Herold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Herold/Herold.woff") format("woff"),
+    url("../fonts/Herold/Herold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}*/

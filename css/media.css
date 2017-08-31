@@ -1,0 +1,334 @@
+/*==========  Desktop First Method  ==========*/
+
+/* _______САМ ДОБАВИЛ______ */
+@media only screen and (max-width : 1720px) {
+	.arrow-green {
+		margin-top: -124px;
+		margin-bottom: -24px;
+	}
+}
+
+/* _______САМ ДОБАВИЛ______ */
+@media only screen and (max-width : 1520px) {
+	.text_bottom {
+		margin-top: -88px;
+	}
+	.arrow-green {
+		margin-top: -112px;
+		margin-bottom: -46px;
+	}
+}
+
+/* _______САМ ДОБАВИЛ______ */
+@media only screen and (max-width : 1400px) {
+	.text_bottom {
+		margin-top: -78px;
+	}
+	.arrow-green {
+		margin-top: -98px;
+		margin-bottom: -46px;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	h1 {
+		/*color: red;*/		/* ____ПОТОМ УБРАТЬ____ */
+		font-size: 84px;
+	}
+	h1 span {
+		/*color: red;*/			/* ____ПОТОМ УБРАТЬ____ */
+		font-size: 46px;
+	}
+	.s_slider {
+		margin-top: -32px;
+	}
+	.text_bottom {
+		margin-top: -60px;
+	}
+	.arrow-green {
+		margin-top: -86px;
+		margin-bottom: -46px;
+	}
+	.knopka_wrap {
+		margin-top: 94px;
+		margin-bottom: 5px;
+	}
+	div#excellence h2 {
+		font-size: 42px;
+		margin-top: -202px;
+		margin-bottom: 112px;
+		/*color: green;*/
+	}
+	.work-overlay p.lightbox {
+		padding: 6px;
+	}
+	/*.item_top h3, .portfolio_items h3 {
+		font-size: 34px;
+		color: gray;
+	}*/
+	h2 {
+		font-size: 44px;
+		/*color: gray;*/
+	}
+	h3 {
+		font-size: 34px;
+		/*color: gray;*/
+	}
+	h3 span {
+		font-size: 32px;
+	}
+
+/*	div#first-floor h2, div#second-floor h2 {
+		font-size: 40px;
+		color: green;
+	}*/
+	footer .footer__social p {
+		margin: -3px;
+	}
+
+}
+
+/* _________ДЛЯ ЭТИХ ЭКРАНОВ___ПОЧТИ СДЕЛАНО________ */
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	h1 {
+		/*color: blue;*/			/* ____ПОТОМ УБРАТЬ____ */
+		font-size: 68px;
+	}
+	h1 span {
+		/*color: blue;*/			/* ____ПОТОМ УБРАТЬ____ */
+		font-size: 36px;
+	}
+	h2 {
+		font-size: 32px;
+		padding-bottom: 6px;
+		/*color: lightblue;*/
+	}
+	h3 {
+		font-size: 30px;
+		padding-bottom: 6px;
+		/*color: lightblue;*/
+	}
+	h3 span {
+		font-size: 28px;
+	}
+
+	div#gray_wrap .knopka_wrap {
+		margin-top: 0;
+	}
+
+	.s_slider {
+		margin-top: 0;
+	}
+	.text_bottom {
+		margin-top: -50px;
+	}
+	.arrow-green {
+		margin-top: -72px;
+		margin-bottom: -46px;
+	}
+	.knopka_wrap {
+		margin-top: 5px;
+		margin-bottom: 15px;
+	}
+	div#excellence h2 {
+		font-size: 36px;
+		/*color: red;*/
+		margin-top: -140px;
+		margin-bottom: 60px;
+	}
+	.work-overlay p.lightbox {
+		padding: 22px;
+	}
+/*	.item_top h3, .portfolio_items h3 {
+		font-size: 32px;
+		color: red;
+	}
+	.first-floor h2, .second-floor h2 {
+		font-size: 36px;
+		color: red;
+	}*/
+	.nav_bottom ul {
+		margin: 0;
+		padding: 0;
+		text-align: right;
+	}
+	.nav_bottom ul li a {
+		/*color: blue;*/
+	}
+		footer .footer__social p {
+		margin-top: 29px;
+		/*color: green;*/
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	h1 {
+		/*color: green;*/			/* ____ПОТОМ УБРАТЬ____ */
+	}
+	h1 span {
+		/*color: green;*/			/* ____ПОТОМ УБРАТЬ____ */
+	}
+	.text_bottom {
+		margin-top: -40px;
+	}
+	div#main_text_wrap {
+		margin-top: 10px;
+	}
+
+	div#excellence h2 {
+		font-size: 32px;
+		/*color: brown;*/
+		margin-top: -140px;
+		margin-bottom: 66px;
+	}
+	.work-overlay p.lightbox {
+		padding: 4px;
+		font-size: 14px;
+	}
+/*	.item_top h3, .portfolio_items h3 {
+		font-size: 28px;
+		color: brown;
+	}
+	.first-floor h2, .second-floor h2 {
+		font-size: 32px;
+		color: brown;
+	}*/
+	h2 {
+		font-size: 30px;
+		/*color: lightgreen;*/
+	}
+	h3 {
+		font-size: 27px;
+		/*color: lightgreen;*/
+	}
+	h3 span {
+		font-size: 25px;
+	}
+	.nav_bottom ul {
+		text-align: center;
+	}
+	.nav_bottom ul li a {
+		/*color: red;*/
+	}
+	.footer__wrap {
+		text-align: center;
+	}
+	footer .footer__social p {
+		text-align: center;
+		/*color: yellow;*/
+	}
+
+/*	.arrow-green {
+		margin-top: -54px;
+		margin-bottom: -38px;
+	}*/
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
+
+/* _______САМ ДОБАВИЛ______ */
+@media only screen and (max-width : 700px) {
+	.text_bottom {
+		margin-top: -26px;
+	}
+
+	div#excellence h2 {
+		font-size: 30px;
+		/*color: blue;*/
+		margin-top: 8px;
+		margin-bottom: 4px;
+		text-align: center;
+	}
+	h2 {
+		font-size: 27px;
+		/*color: red;*/
+	}
+	h3 {
+		font-size: 24px;
+		/*color: red;*/
+	}
+	h3 span {
+		font-size: 22px;
+	}
+	/*.item_top h3, .portfolio_items h3 {
+		font-size: 26px;
+		color: blue;
+	}
+	.first-floor h2, .second-floor h2 {
+		font-size: 30px;
+		color: blue;
+	}*/
+}
+
+/* _______САМ ДОБАВИЛ______ */
+@media only screen and (max-width : 560px) {
+	.text_bottom {
+		margin-top: -4px;
+	}
+	.text_bottom p {
+		line-height: 1.1;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
